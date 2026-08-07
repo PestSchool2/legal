@@ -1,0 +1,5 @@
+title: PestPic
+description: Legal documents for the PestPic mobile app
+theme: jekyll-theme-primer
+exclude:
+  - README.md
