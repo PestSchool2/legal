@@ -19,9 +19,16 @@ To change the wording, edit `docs/legal/*.en.md` in the app repository and repub
 python3 docs/legal/publish-site.py --out /tmp/legal-site
 cp /tmp/legal-site/* /path/to/this/checkout/
 git commit -am "publish: <what changed>" && git push
+python3 docs/legal/publish-site.py --record   # in the app repo, after the push lands
 ```
 
 Copy the files in rather than replacing the tree — this README is not generated and would be lost.
+
+**Do not skip the last line.** The app repository's unit suite compares the sources against the
+fingerprint `--record` writes, so it stays red until a wording change has actually been published
+here. That check exists because this site once spent six days serving a privacy policy older than
+the app, which nobody could have noticed: a stale legal site returns 200 and renders perfectly.
+Recording without pushing is the one way to defeat it, and it is a lie the check cannot catch.
 
 `CNAME` pins the custom domain. GitHub Pages unsets the domain when that file disappears, so it is
 regenerated on every publish; do not delete it.
