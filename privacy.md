@@ -72,10 +72,14 @@ We do not sell your personal information, and we do not use it for advertising.
 
 **Pest control providers.** When you choose to contact a provider, the app opens your own email app
 or dialer with a draft addressed to that provider. **You send it yourself, and you can see and edit
-everything before you do.** What that draft contains — typically the diagnosis result, the phone
-number and address you entered, and your note — is what the provider receives. We do not send
-anything to a provider on your behalf, and we share nothing with any provider unless you choose to
-contact one.
+everything before you do.** That draft contains the diagnosis result, the phone number and address
+you entered, and your note — and, when you submitted a photo for that diagnosis, a secure link so
+the provider can view it to assess the pest and respond to your inquiry. Photos are shared only with
+the specific provider you choose to contact, not with any other third party: the link works only for
+that provider, and it stops working automatically after 14 days or sooner if you ask us to disable
+it. We remove location data embedded in a photo before creating its link. We do not send anything to
+a provider on your behalf, and we share nothing — including the photo — with any provider unless you
+choose to contact one.
 
 **Service providers that process data for us.** Our servers send your photo to third parties in
 order to produce a result:
